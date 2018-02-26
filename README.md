@@ -1,11 +1,16 @@
-# SqlQueryStats
+# Sql Query Stats
 
-Short description and motivation.
+This Gem adds some useful SQL query stats to your Rails logs.
 
-## Usage
-How to use my plugin.
+#### Available Stats
 
-## Installation
+* Query count
+* Query cache used
+* Slowest query
+* Slowest query duration
+* Total query duration
+
+## Installation & Usage
 Add this line to your application's Gemfile:
 
 ```ruby
@@ -19,11 +24,8 @@ $ bundle
 
 Or install it yourself as:
 ```bash
-$ gem install sql_query_stats
+$ gem install sql-query-stats
 ```
-
-## Contributing
-Contribution directions go here.
 
 ## License
 The gem is available as open source under the terms of the [MIT License](http://opensource.org/licenses/MIT).
