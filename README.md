@@ -9,7 +9,7 @@ How to use my plugin.
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'sql_query_stats'
+gem 'sql-query-stats'
 ```
 
 And then execute:

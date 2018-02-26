@@ -5,11 +5,11 @@ require 'sql_query_stats/version'
 
 # Describe your gem and declare its dependencies:
 Gem::Specification.new do |s|
-  s.name        = 'sql_query_stats'
+  s.name        = 'sql-query-stats'
   s.version     = SqlQueryStats::VERSION
   s.authors     = ['Ben Barber']
   s.email       = ['contact@benbarber.co.uk']
-  s.homepage    = ''
+  s.homepage    = 'https://github.com/benbarber/sql-query-stats'
   s.summary     = 'Get more information from ActiveRecord'
   s.description = 'SqlQueryStats'
   s.license     = 'MIT'
@@ -21,7 +21,7 @@ Gem::Specification.new do |s|
     'README.md'
   ]
 
-  s.add_dependency 'rails', '~> 5.1.5'
+  s.add_dependency 'rails', '> 3.0'
 
-  s.add_development_dependency 'sqlite3'
+  s.add_development_dependency 'sqlite3', '> 1.2'
 end

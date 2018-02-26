@@ -1,8 +1,8 @@
 PATH
   remote: .
   specs:
-    sql_query_stats (0.1.0)
-      rails (~> 5.1.5)
+    sql-query-stats (0.1.0)
+      rails (> 3.0)
 
 GEM
   remote: https://rubygems.org/
@@ -112,8 +112,8 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  sql_query_stats!
-  sqlite3
+  sql-query-stats!
+  sqlite3 (> 1.2)
 
 BUNDLED WITH
    1.14.6
