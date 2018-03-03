@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    sql-query-stats (0.1.0)
+    sql-query-stats (0.1.4)
       rails (> 3.0)
 
 GEM

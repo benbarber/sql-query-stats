@@ -10,8 +10,11 @@ Gem::Specification.new do |s|
   s.authors     = ['Ben Barber']
   s.email       = ['contact@benbarber.co.uk']
   s.homepage    = 'https://github.com/benbarber/sql-query-stats'
-  s.summary     = 'Get more information from ActiveRecord'
-  s.description = 'SqlQueryStats'
+  s.summary     = 'Adds some useful SQL query stats to your Rails logs.'
+  s.description = 'Adds some useful SQL query stats to your Rails logs, \
+                   reported stats include, query count, slowest query and \
+                   slowest query duration'
+
   s.license     = 'MIT'
 
   s.files = Dir[

@@ -45,7 +45,7 @@ module SqlQueryStats
     end
 
     def check_slowest_query(event)
-      reportable_queries = %w[INSERT SELECT UPDATE]
+      reportable_queries = %w[SELECT INSERT UPDATE]
       return unless event.duration > stats[:slowest_query_duration]
       return unless event.payload[:sql].start_with?(*reportable_queries)
 
@@ -55,7 +55,7 @@ module SqlQueryStats
     def report_slowest_query(event)
       duration = stats[:slowest_query_duration] + event.duration
 
-      log(:slowest_query, event.payload[:sql])
+      log(:slowest_query, Sanitizer.sanitize(event.payload[:sql]))
       log(:slowest_query_duration, duration.round(1))
     end
   end

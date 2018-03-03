@@ -2,7 +2,7 @@
 
 This Gem adds some useful SQL query stats to your Rails logs.
 
-#### Available Stats
+#### Reported stats include
 
 * Query count
 * Query cache used
@@ -10,7 +10,7 @@ This Gem adds some useful SQL query stats to your Rails logs.
 * Slowest query duration
 * Total query duration
 
-## Installation & Usage
+## Installation & usage
 Add this line to your application's Gemfile:
 
 ```ruby
