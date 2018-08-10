@@ -17,11 +17,7 @@ module SqlQueryStats
     end
 
     def self.filter_values(sql)
-      sql.scan(/(?:VALUES(?:\s?)\()(.*)(?:\)+)/) do |value|
-        sql.gsub!(/#{value}/, "'[FILTERED]'")
-      end
-
-      sql
+      sql.gsub!(/(?:VALUES(?:\s?)\()(.*)(?:\)+)/, 'VALUES(?)')
     end
   end
 end
