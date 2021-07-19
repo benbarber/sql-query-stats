@@ -10,14 +10,16 @@ module SqlQueryStats
 
     def self.filter_params(filters, sql)
       filters.each do |filter|
-        sql.gsub!(/`#{filter}` = '[^']+'/, "#{filter} = '[FILTERED]'")
+        sql.gsub!(/`#{filter}` = '[^']+'/, "`#{filter}` = '[FILTERED]'")
       end
 
       sql
     end
 
     def self.filter_values(sql)
-      sql.gsub!(/(?:VALUES(?:\s?)\()(.*)(?:\)+)/, 'VALUES(?)')
+      sql.gsub!(/(?:VALUES(?:\s?)\()(.*)(?:\)+)/, 'VALUES (?)')
+
+      sql
     end
   end
 end
